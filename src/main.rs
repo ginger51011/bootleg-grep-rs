@@ -22,7 +22,7 @@ fn main() {
         for line in lines {
             // Lines read properly
             if let Ok(line_text) = line {
-                if (pattern.is_match(&line_text)) {
+                if pattern.is_match(&line_text) {
                     println!("{}", line_text);
                 }
             }
